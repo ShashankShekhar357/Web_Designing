@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+  </head>
+  <body>
+    <h1>Hotel Room Booking Form</h1>
+
+    <form action="#" method="post">
+      
+      <label for="fullName">Full Name *</label><br>
+      <input type="text" id="fullName" name="fillName" required><br><br>
+
+      <label for="email">Email Address *</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number *</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="checkIn">Check-in Date *</label><br>
+      <input type="date" id="checkIn" name="checkIn" required><br><br>
+
+      <label for="checkOut">Check-out Date *</label><br>
+      <input type="date" id="checkOut" name="checkOut" required><br><br>
+
+      <label for="roomType">Room Type *</label><br>
+      <select id="roomType" name="roomType" required>
+        <option value="single">Single Room - ₹1,200/night</option>
+        <option value="double">Double Room - ₹1,800/night</option>
+        <option value="deluxe">Deluxe Suite - ₹3,000/night</option>
+        <option value="presidential">Presidential Suite - ₹5,000/night</option>
+      </select><br><br>
+
+      <label for="guests">Number of Guests *</label><br>
+      <input type="number" id="guests" name="guests" min="1" max="6" value="1" required><br><br>
+
+      <label for="requests">Special Requests</label><br>
+      <textarea id="requests" name="requests" rows="6" cols="50"></textarea><br><br>
+
+      <button type="submit">Book Now</button>
+      <button type="reset">Reset Form</button>
+    </form>
+  </body>
+</html>

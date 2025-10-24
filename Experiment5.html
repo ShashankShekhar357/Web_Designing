@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+
+    <form action="#" method="post">
+      
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fillName" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="checkIn">Password:</label>
+      <input type="password" id="checkIn" name="checkIn" required><br><br>
+
+      <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+        <br><br>
+
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option value="">--Select Course--</option>
+        <option value="">CSE</option>
+        <option value="">CSE-DS</option>
+        <option value="">CSE-AIML</option>
+        <option value="">ELEC</option>
+        <option value="">ME</option>
+      </select><br><br>
+
+      <label for="phone">Contact No:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address" rows="6" cols="50" placeholder="Enter your address"></textarea><br><br>
+
+      <button type="submit">Book Now</button>
+      <button type="reset">Reset Form</button>
+
+      <hr>
+
+    </form>
+  </body>
+</html>
