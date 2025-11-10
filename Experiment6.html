@@ -20,7 +20,7 @@
                 text-align: center;
                 padding: 20px;
                 background-color: #131921;
-                color: #ff9900;
+                color: white;
             }
 
             .section-title {
@@ -44,40 +44,54 @@
                 margin-bottom: 10px;
             }
 
+            .product-name {
+                text-align: left;
+                color: black;
+                font-weight: 790;
+            }
+            
+            .product-description {
+                color: gray;
+                font-size: 14px;
+                margin-top: 5px;
+                text-align: left;
+                font-weight: lighter;
+            }
+            
+            .price-container {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-top: 10px;
+            }
+            
             .product-price {
-                color: #B12704;
+                color: gray;
                 font-size: 18px;
                 font-weight: bold;
-                margin-top: 5px;
                 text-decoration: line-through;
             }
 
             .product-sale-price {
                 color: green;
                 font-size: 18px;
-                font-weight:bolder;
-                margin-top: 5px;
-            }
-
-            .product-rating {
-                color: #FFA41C;
-                font-size: 14px;
-                margin-top: 5px;
+                font-weight: bolder;
             }
 
             .add-to-cart {
-                background-color: #ff9900;
+                background-color: rgb(0, 104, 202);
                 color: white;
                 border: none;
-                padding: 8px 16px;
+                padding: 12px 16px;
                 border-radius: 4px;
                 cursor: pointer;
                 margin-top: 10px;
-                font-size: 14px;
+                font-size: 16px;
+                width: 100%;
             }
 
             .add-to-cart:hover {
-                background-color: #e88b00;
+                background-color: gray;
             }
 
             @media (max-width: 1200px) {
@@ -100,12 +114,15 @@
         </style>
     </head>
     <body>
-        <h1>E-Commerce</h1>
+        <h1>ShopEasy</h1>
             <div class="product-card">
-                <img src="https://m.media-amazon.com/images/I/81nPkLHN3vL._AC_UY327_QL65_.jpg" alt="Laptop 1"/>
-                <div class="product-rating">★★★★☆ (1,245)</div>
-                <div class="product-price">₹45,999</div>
-                <div class="product-sale-price">₹40,000</div>
+                <img src="shirt.png" alt="Laptop 1"/>
+                <h3 class="product-name">Classic Cotton T-Shirt</h3>
+                <h5 class="product-description">Soft, breathable cotton, Regular fit. Available in multiple colors.</h5>
+                <div class="price-container">
+                    <span class="product-sale-price">₹799</span>
+                    <span class="product-price">₹1,999</span>
+                </div>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
     </body>
