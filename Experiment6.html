@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Commerce</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f3f3f3;
+            }
+
+            h1 {
+                text-align: center;
+                padding: 20px;
+                background-color: #131921;
+                color: #ff9900;
+            }
+
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: #0F1111;
+            }
+
+            .product-card {
+                background-color: white;
+                padding: 15px;
+                border-radius: 8px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .product-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+                margin-bottom: 10px;
+            }
+
+            .product-price {
+                color: #B12704;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 5px;
+                text-decoration: line-through;
+            }
+
+            .product-sale-price {
+                color: green;
+                font-size: 18px;
+                font-weight:bolder;
+                margin-top: 5px;
+            }
+
+            .product-rating {
+                color: #FFA41C;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+
+            .add-to-cart {
+                background-color: #ff9900;
+                color: white;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            .add-to-cart:hover {
+                background-color: #e88b00;
+            }
+
+            @media (max-width: 1200px) {
+                .product-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .product-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 480px) {
+                .product-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>E-Commerce</h1>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81nPkLHN3vL._AC_UY327_QL65_.jpg" alt="Laptop 1"/>
+                <div class="product-rating">★★★★☆ (1,245)</div>
+                <div class="product-price">₹45,999</div>
+                <div class="product-sale-price">₹40,000</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+    </body>
+</html>
