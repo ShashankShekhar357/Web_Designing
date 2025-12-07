@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px 70px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 150px;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #007dfd;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+        }
+        .name {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .details {
+            font-size: 15px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="circle">JK</div>
+            <div class="name">Jeet Kumar</div>
+            <div class="details">
+                B.Tech - CSE<br>
+                Roll No: 21CS1007<br>
+                1st Year
+            </div>
+        </div>
+        <div class="card">
+            <div class="circle">AR</div>
+            <div class="name">Asha Rani</div>
+            <div class="details">
+                B.Tech - IT<br>
+                Roll No: 21IT1012<br>
+                1st Year
+            </div>
+        </div>
+        <div class="card">
+            <div class="circle">RK</div>
+            <div class="name">Rohit Kumar</div>
+            <div class="details">
+                B.Tech - ECE<br>
+                Roll No: 21EC1009<br>
+                1st Year
+            </div>
+        </div>
+    </div>
+</body>
+</html>

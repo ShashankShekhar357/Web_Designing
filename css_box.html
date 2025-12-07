@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS-Box</title>
+        <style>
+            body {
+                background-color: black;
+                display: flex;
+                justify-content: center;  /* Centers horizontally */
+                align-items: center;
+            }
+            .first-layer {
+                background-color: teal;
+                padding: 10px;
+                width: 100px;
+                text-align: center;
+            }
+            .second-layer {
+                padding: 10px;
+                background-color: yellow;
+                width: 120px;
+            }
+            .third-layer {
+                border: 10px solid cornflowerblue;
+                width: 140px;
+            }
+            .fourth-layer {
+                padding: 10px;
+                background-color: crimson;
+                width: 160px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fourth-layer">
+            <div class="third-layer">
+                <div class="second-layer">
+                    <div class="first-layer">
+                        <p>Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
