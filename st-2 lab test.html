@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body * {
+            box-sizing: border-box;
+        }
+        
+        .header-title {
+            text-align: center;
+            padding: 20px;
+            background-color: #808080;
+            color: #000000;
+            border: 10px solid #ffffff;
+        }
+        
+        .highlight {
+            color: #ff0000;
+        }
+        
+        .navigation-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .nav-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .nav-item-primary {
+            background-color: #add8e6;
+            color: #800080;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        
+        .nav-item-secondary {
+            background-color: #90ee90;
+            color: #800080;
+            padding: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header-title">My <span class="highlight">Website</span> Navigation</h1>
+    <nav class="navigation-container">
+        <div class="nav-row">
+            <div class="nav-item-primary">Home</div>
+            <div class="nav-item-primary">About</div>
+            <div class="nav-item-primary">Menu</div>
+            <div class="nav-item-primary">Downloads</div>
+        </div>
+        <div class="nav-row">
+            <div class="nav-item-secondary">Dashboard</div>
+            <div class="nav-item-secondary">Forum</div>
+            <div class="nav-item-secondary">Inbox</div>
+            <div class="nav-item-secondary">Logout</div>
+        </div>
+    </nav>
+</body>
+</html>
